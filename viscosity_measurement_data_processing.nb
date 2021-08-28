@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     22232,        579]
-NotebookOptionsPosition[     21277,        559]
-NotebookOutlinePosition[     21622,        574]
-CellTagsIndexPosition[     21579,        571]
+NotebookDataLength[     25980,        676]
+NotebookOptionsPosition[     24649,        652]
+NotebookOutlinePosition[     24994,        667]
+CellTagsIndexPosition[     24951,        664]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -32,9 +32,121 @@ Cell[BoxData[
 9c95c8359b12"],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{{3.8391231345031805`*^9, 
+  3.839123136356181*^9}},ExpressionUUID->"7cf63344-f64f-49b5-88d7-\
+20bd0355b5c6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"equipment", " ", "parameter", " ", "selection"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"R", "="}], ";", 
+    RowBox[{
+     SubscriptBox["R", "1"], "="}], ";", 
+    RowBox[{"L", "="}], ";", 
+    RowBox[{"\[Mu]", "="}], ";", 
+    RowBox[{"v", "="}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"R", ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "capillary"}]}], ",",
+      " ", 
+     RowBox[{
+      SubscriptBox["R", "1"], ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "cylinder"}]}], ",", 
+     " ", 
+     RowBox[{"L", ":", 
+      RowBox[{"length", " ", "of", " ", "capillary"}]}], ",", " ", 
+     RowBox[{"\[Mu]", ":", 
+      RowBox[{"estimated", " ", "viscosity"}]}], ",", " ", 
+     RowBox[{"v", ":", 
+      RowBox[{"estimated", " ", "piston", " ", "speed"}]}]}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"F", "\[Rule]", 
+    FractionBox[
+     RowBox[{"8", "\[Pi]", " ", "v", " ", 
+      SuperscriptBox[
+       SubscriptBox["R", "1"], "4"], "L", " ", "\[Mu]"}], 
+     SuperscriptBox["R", "4"]]}], 
+   RowBox[{"(*", 
+    RowBox[{"estimated", " ", "thrust"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Clear", "[", 
+    RowBox[{"\"\<Global`*\>\"", ",", "Subscript"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8333148093716507`*^9, 3.8333149397639585`*^9}, {
+  3.8333149744744267`*^9, 3.8333150445799007`*^9}, {3.83912318043602*^9, 
+  3.839123189789859*^9}, {3.839123294341898*^9, 3.8391233584287605`*^9}, {
+  3.8391234115901146`*^9, 
+  3.839123432044238*^9}},ExpressionUUID->"d1e7c0b7-00ac-46a0-aa6b-\
+aa29685db6ff"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.8391164818048224`*^9, 3.839116485248269*^9}, 
-   3.8391167055276847`*^9},ExpressionUUID->"21ed1205-62db-4130-8aed-\
+   3.8391167055276847`*^9, 
+   3.8391231459721994`*^9},ExpressionUUID->"21ed1205-62db-4130-8aed-\
 07d062374c0a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Reynolds", " ", "number", " ", "estimating"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[Rho]", "="}], ";", 
+    RowBox[{"v", "="}], ";", 
+    RowBox[{
+     SubscriptBox["R", "1"], "="}], ";", 
+    RowBox[{"R", "="}], ";", 
+    RowBox[{"\[Mu]", "="}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"\[Rho]", ":", "density"}], ",", " ", 
+     RowBox[{"v", ":", 
+      RowBox[{"estimated", " ", "piston", " ", "speed"}]}], ",", " ", 
+     RowBox[{"R", ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "capillary"}]}], ",",
+      " ", 
+     RowBox[{
+      SubscriptBox["R", "1"], ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "cylinder"}]}], ",", 
+     " ", 
+     RowBox[{"\[Mu]", ":", 
+      RowBox[{"estimated", " ", "viscosity"}]}]}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"u", "=", 
+     RowBox[{
+      FractionBox[
+       SuperscriptBox[
+        SubscriptBox["R", "1"], "2"], 
+       SuperscriptBox["R", "2"]], "v"}]}], ";", 
+    RowBox[{
+     SubscriptBox["L", "0"], "=", 
+     RowBox[{"2", "R"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"Re", "\[Rule]", 
+    RowBox[{"\[Rho]", " ", "u", " ", 
+     RowBox[{
+      SubscriptBox["L", "0"], "/", "\[Mu]", 
+      RowBox[{"(*", 
+       RowBox[{"estimated", " ", "Reynolds", " ", "number"}], 
+       "*)"}]}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.8320397527253304`*^9, 3.832039757965331*^9}, {
+   3.8320618205625725`*^9, 3.832061846424572*^9}, {3.8330631530017357`*^9, 
+   3.833063201498675*^9}, {3.834050719823307*^9, 3.8340509079673076`*^9}, {
+   3.839123155398185*^9, 3.839123277203821*^9}, 3.8391233424208527`*^9, {
+   3.839123420948348*^9, 
+   3.839123440780121*^9}},ExpressionUUID->"f5553756-95c9-4cc2-82b6-\
+f41abffd55dc"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.8391231411991806`*^9, 
+  3.839123141340181*^9}},ExpressionUUID->"44bae143-c99e-4dee-ae3f-\
+c0f12d3d1b52"],
 
 Cell[BoxData[
  RowBox[{
@@ -48,38 +160,30 @@ Cell[BoxData[
     RowBox[{"R", "="}], ";", 
     RowBox[{
      SubscriptBox["R", "1"], "="}], ";", 
-    RowBox[{"L", "="}], ";", 
-    RowBox[{"(*", 
+    RowBox[{"L", "="}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"R", ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "capillary"}]}], ",",
+      " ", 
      RowBox[{
-      RowBox[{"R", ":", 
-       RowBox[{"Inside", " ", "diameter", " ", "of", " ", "capillary"}]}], 
-      ",", " ", 
-      RowBox[{
-       SubscriptBox["R", "1"], ":", 
-       RowBox[{"Inside", " ", "diameter", " ", "of", " ", "cylinder"}]}], ",",
-       " ", 
-      RowBox[{"L", ":", 
-       RowBox[{"length", " ", "of", " ", "capillary"}]}]}], "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"F", "=", 
-     RowBox[{"9.8", "*", 
-      RowBox[{"Table", "[", 
-       RowBox[{
-        RowBox[{"0.542", "+", 
-         RowBox[{"0.2", "i"}]}], ",", 
-        RowBox[{"{", 
-         RowBox[{"i", ",", "0", ",", "4"}], "}"}]}], "]"}]}]}], ";", 
+      SubscriptBox["R", "1"], ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "cylinder"}]}], ",", 
+     " ", 
+     RowBox[{"L", ":", 
+      RowBox[{"length", " ", "of", " ", "capillary"}]}]}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"F", "="}], ";", 
     RowBox[{"(*", 
-     RowBox[{"thrust", " ", "of", " ", "each", " ", "step"}], "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"v", "=", 
-     RowBox[{"{", 
-      RowBox[{
-      "0.000466", ",", "0.000968", ",", "0.00132", ",", "0.00162", ",", 
-       "0.00187"}], "}"}]}], ";", 
+     RowBox[{"thrust", " ", "of", " ", "each", " ", "step", 
+      RowBox[{"(", 
+       RowBox[{"a", " ", "table"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"v", "="}], ";", 
     RowBox[{"(*", 
-     RowBox[{"piston", " ", "speed", " ", "of", " ", "each", " ", "step"}], 
-     "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"piston", " ", "speed", " ", "of", " ", "each", " ", "step", 
+      RowBox[{"(", 
+       RowBox[{"a", " ", "table"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
     RowBox[{"sol1", "=", 
      RowBox[{"NMinimize", "[", 
       RowBox[{
@@ -150,10 +254,9 @@ Cell[BoxData[
      RowBox[{"(*", 
       RowBox[{"observed", " ", "value", " ", "of", " ", "\[Mu]"}], 
       "*)"}]}]}]}]}]], "Input",
- CellChangeTimes->{{3.8391154455410175`*^9, 3.8391155493018227`*^9}, {
-  3.839115627685027*^9, 3.8391157927003183`*^9}},
- EmphasizeSyntaxErrors->
-  True,ExpressionUUID->"68fb15b1-a31f-422f-bd14-e3b590108247"],
+ CellChangeTimes->{{3.839123536132844*^9, 
+  3.839123554398915*^9}},ExpressionUUID->"b8329e5f-e1be-4f4f-884f-\
+e31a465afd36"],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
@@ -178,48 +281,42 @@ Cell[BoxData[
      SubscriptBox["R", "1"], "="}], ";", 
     RowBox[{"L", "="}], ";", 
     RowBox[{
-     SubscriptBox["c", "1"], "="}], ";", 
-    RowBox[{"(*", 
+     SubscriptBox["c", "1"], "="}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"R", ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "capillary"}]}], ",",
+      " ", 
      RowBox[{
-      RowBox[{"R", ":", 
-       RowBox[{"Inside", " ", "diameter", " ", "of", " ", "capillary"}]}], 
-      ",", " ", 
+      SubscriptBox["R", "1"], ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "cylinder"}]}], ",", 
+     " ", 
+     RowBox[{"L", ":", 
+      RowBox[{"length", " ", "of", " ", "capillary"}]}], ",", " ", 
+     RowBox[{
+      SubscriptBox["c", "1"], ":", 
       RowBox[{
-       SubscriptBox["R", "1"], ":", 
-       RowBox[{"Inside", " ", "diameter", " ", "of", " ", "cylinder"}]}], ",",
-       " ", 
-      RowBox[{"L", ":", 
-       RowBox[{"length", " ", "of", " ", "capillary"}]}], ",", " ", 
-      RowBox[{
-       SubscriptBox["c", "1"], ":", 
-       RowBox[{
-       "linear", " ", "coefficient", " ", "of", " ", "capillary", " ", 
-        "deformation", 
-        RowBox[{"(", 
+      "linear", " ", "coefficient", " ", "of", " ", "capillary", " ", 
+       "deformation", 
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox["U", "r"], "=", 
          RowBox[{
-          SubscriptBox["U", "r"], "=", 
-          RowBox[{
-           SubscriptBox["c", "1"], "p"}]}], ")"}]}]}]}], "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"F", "=", 
-     RowBox[{"9.8", "*", 
-      RowBox[{"Table", "[", 
-       RowBox[{
-        RowBox[{"0.542", "+", 
-         RowBox[{"0.2", "i"}]}], ",", 
-        RowBox[{"{", 
-         RowBox[{"i", ",", "0", ",", "4"}], "}"}]}], "]"}]}]}], ";", 
-    RowBox[{"(*", 
-     RowBox[{"thrust", " ", "of", " ", "each", " ", "step"}], "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"v", "=", 
-     RowBox[{"{", 
-      RowBox[{
-      "0.000456", ",", "0.000969", ",", "0.00136", ",", "0.00167", ",", 
-       "0.0019"}], "}"}]}], ";", 
-    RowBox[{"(*", 
-     RowBox[{"piston", " ", "speed", " ", "of", " ", "each", " ", "step"}], 
-     "*)"}], "\[IndentingNewLine]", 
+          SubscriptBox["c", "1"], "p"}]}], ")"}]}]}]}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"F", "="}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{"thrust", " ", "of", " ", "each", " ", "step", 
+     RowBox[{"(", 
+      RowBox[{"a", " ", "table"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"v", "="}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{"piston", " ", "speed", " ", "of", " ", "each", " ", "step", 
+     RowBox[{"(", 
+      RowBox[{"a", " ", "table"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"sol1", "=", 
      RowBox[{"NMinimize", "[", 
       RowBox[{
@@ -372,8 +469,9 @@ Cell[BoxData[
    3.839047932791591*^9}, {3.8390479658561926`*^9, 3.839048036847398*^9}, 
    3.8390569740114055`*^9, {3.8390574561152315`*^9, 3.8390574564593115`*^9}, {
    3.839115823446596*^9, 3.839115840605334*^9}, {3.839115918485073*^9, 
-   3.8391160749174156`*^9}, {3.839116211820775*^9, 
-   3.8391162200840254`*^9}},ExpressionUUID->"0be3a40f-3bdd-4541-999e-\
+   3.8391160749174156`*^9}, {3.839116211820775*^9, 3.8391162200840254`*^9}, 
+   3.8391232875579743`*^9, {3.839123531461501*^9, 
+   3.839123562933242*^9}},ExpressionUUID->"0be3a40f-3bdd-4541-999e-\
 3eac01a55935"],
 
 Cell[BoxData[
@@ -397,65 +495,58 @@ Cell[BoxData[
     RowBox[{"L", "="}], ";", 
     RowBox[{"k", "="}], ";", 
     RowBox[{
-     SubscriptBox["p", "0"], "="}], ";", 
-    RowBox[{"(*", 
+     SubscriptBox["p", "0"], "="}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"R", ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "capillary"}]}], ",",
+      " ", 
      RowBox[{
-      RowBox[{"R", ":", 
-       RowBox[{"Inside", " ", "diameter", " ", "of", " ", "capillary"}]}], 
-      ",", " ", 
-      RowBox[{
-       SubscriptBox["R", "1"], ":", 
-       RowBox[{"Inside", " ", "diameter", " ", "of", " ", "cylinder"}]}], ",",
-       " ", 
-      RowBox[{"L", ":", 
-       RowBox[{"length", " ", "of", " ", "capillary"}]}], ",", " ", 
-      RowBox[{"k", ":", 
-       RowBox[{"adiabatic", " ", "coefficient"}]}], ",", " ", 
-      RowBox[{
-       SubscriptBox["p", "0"], ":", 
-       RowBox[{"environmental", " ", "pressure"}]}]}], "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"F", "=", 
-     RowBox[{"9.8", "*", 
-      RowBox[{"Table", "[", 
-       RowBox[{
-        RowBox[{"1.042", "+", 
-         RowBox[{"0.2", "i"}]}], ",", 
-        RowBox[{"{", 
-         RowBox[{"i", ",", "0", ",", "4"}], "}"}]}], "]"}]}]}], ";", 
-    RowBox[{"(*", 
-     RowBox[{"thrust", " ", "of", " ", "each", " ", "step"}], "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"v", "=", 
-     RowBox[{"{", 
-      RowBox[{
-      "0.0000825", ",", "0.000108", ",", "0.000134", ",", "0.00015", ",", 
-       "0.000162"}], "}"}]}], ";", 
-    RowBox[{"(*", 
-     RowBox[{"piston", " ", "speed", " ", "of", " ", "each", " ", "step"}], 
-     "*)"}], "\[IndentingNewLine]", 
-    RowBox[{"sol1", "=", 
-     RowBox[{"NMinimize", "[", 
-      RowBox[{
-       RowBox[{"Total", "@", 
-        RowBox[{"Table", "[", 
+      SubscriptBox["R", "1"], ":", 
+      RowBox[{"Inside", " ", "diameter", " ", "of", " ", "cylinder"}]}], ",", 
+     " ", 
+     RowBox[{"L", ":", 
+      RowBox[{"length", " ", "of", " ", "capillary"}]}], ",", " ", 
+     RowBox[{"k", ":", 
+      RowBox[{"adiabatic", " ", "coefficient"}]}], ",", " ", 
+     RowBox[{
+      SubscriptBox["p", "0"], ":", 
+      RowBox[{"environmental", " ", "pressure"}]}]}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"F", "="}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{"thrust", " ", "of", " ", "each", " ", "step", 
+     RowBox[{"(", 
+      RowBox[{"a", " ", "table"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"v", "="}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{"piston", " ", "speed", " ", "of", " ", "each", " ", "step", 
+     RowBox[{"(", 
+      RowBox[{"a", " ", "table"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"sol1", "=", 
+    RowBox[{"NMinimize", "[", 
+     RowBox[{
+      RowBox[{"Total", "@", 
+       RowBox[{"Table", "[", 
+        RowBox[{
          RowBox[{
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"10", "^", "5"}], 
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"v", "[", 
-                RowBox[{"[", "i", "]"}], "]"}], "-", 
-               FractionBox[
-                RowBox[{"k", " ", 
-                 SuperscriptBox["R", "4"], " ", 
-                 SubscriptBox["p", "0"], " ", 
-                 RowBox[{"(", 
-                  RowBox[{
-                   SuperscriptBox[
-                    RowBox[{"(", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"10", "^", "5"}], 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"v", "[", 
+               RowBox[{"[", "i", "]"}], "]"}], "-", 
+              FractionBox[
+               RowBox[{"k", " ", 
+                SuperscriptBox["R", "4"], " ", 
+                SubscriptBox["p", "0"], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
                     RowBox[{"1", "+", 
                     FractionBox[
                     RowBox[{"F", "[", 
@@ -463,23 +554,23 @@ Cell[BoxData[
                     RowBox[{"\[Pi]", " ", 
                     SubscriptBox["p", "0"], " ", 
                     SubsuperscriptBox["R", "1", "2"]}]]}], ")"}], 
-                    RowBox[{
+                   RowBox[{
                     FractionBox["1", "2"], "+", 
                     FractionBox["3", 
                     RowBox[{"4", " ", "k"}]]}]], "-", "1"}], ")"}]}], 
-                RowBox[{"2", " ", 
-                 RowBox[{"(", 
-                  RowBox[{"3", "+", 
-                   RowBox[{"2", " ", "k"}]}], ")"}], " ", "L", " ", "\[Mu]", 
-                 " ", 
-                 SubsuperscriptBox["R", "1", "2"]}]], "-", "b"}], ")"}]}], 
-            ")"}], "^", "2"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"i", ",", "1", ",", 
-            RowBox[{"Length", "@", "v"}]}], "}"}]}], "]"}]}], ",", 
-       RowBox[{"{", 
-        RowBox[{"\[Mu]", ",", "b"}], "}"}], ",", 
-       RowBox[{"Method", "\[Rule]", "\"\<RandomSearch\>\""}]}], "]"}]}]}], 
+               RowBox[{"2", " ", 
+                RowBox[{"(", 
+                 RowBox[{"3", "+", 
+                  RowBox[{"2", " ", "k"}]}], ")"}], " ", "L", " ", "\[Mu]", 
+                " ", 
+                SubsuperscriptBox["R", "1", "2"]}]], "-", "b"}], ")"}]}], 
+           ")"}], "^", "2"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "1", ",", 
+           RowBox[{"Length", "@", "v"}]}], "}"}]}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\[Mu]", ",", "b"}], "}"}], ",", 
+      RowBox[{"Method", "\[Rule]", "\"\<RandomSearch\>\""}]}], "]"}]}], 
    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"\[Mu]", "=", 
@@ -554,7 +645,9 @@ Cell[BoxData[
    3.839035564816402*^9}, 3.8390356415864315`*^9, {3.839116162622527*^9, 
    3.839116192275894*^9}, {3.8391162233069954`*^9, 3.839116262860138*^9}, {
    3.8391163069903235`*^9, 3.8391164181875296`*^9}, {3.839116462213639*^9, 
-   3.83911646911473*^9}},ExpressionUUID->"85d778aa-d980-4f5a-af29-\
+   3.83911646911473*^9}, {3.8391235189576597`*^9, 3.8391235279528756`*^9}, {
+   3.839123565829979*^9, 
+   3.8391235668059597`*^9}},ExpressionUUID->"85d778aa-d980-4f5a-af29-\
 5e5f75b782f4"]
 },
 WindowSize->{1253, 895},
@@ -575,12 +668,16 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 150, 3, 28, "Input",ExpressionUUID->"0c4f51b2-e33e-42c7-9d77-792b3126e05c"],
 Cell[711, 25, 280, 6, 28, "Input",ExpressionUUID->"95d716e0-1a94-491c-9bbf-9c95c8359b12"],
-Cell[994, 33, 198, 3, 48, "Input",ExpressionUUID->"21ed1205-62db-4130-8aed-07d062374c0a"],
-Cell[1195, 38, 4135, 117, 224, "Input",ExpressionUUID->"68fb15b1-a31f-422f-bd14-e3b590108247"],
-Cell[5333, 157, 210, 4, 67, "Input",ExpressionUUID->"b7b6abdc-caec-4585-9d8c-c96e78882978"],
-Cell[5546, 163, 8864, 213, 365, "Input",ExpressionUUID->"0be3a40f-3bdd-4541-999e-3eac01a55935"],
-Cell[14413, 378, 204, 4, 67, "Input",ExpressionUUID->"f7ca94f8-7af4-4ebe-b506-b971bbff7421"],
-Cell[14620, 384, 6653, 173, 422, "Input",ExpressionUUID->"85d778aa-d980-4f5a-af29-5e5f75b782f4"]
+Cell[994, 33, 173, 3, 48, "Input",ExpressionUUID->"7cf63344-f64f-49b5-88d7-20bd0355b5c6"],
+Cell[1170, 38, 1677, 44, 128, "Input",ExpressionUUID->"d1e7c0b7-00ac-46a0-aa6b-aa29685db6ff"],
+Cell[2850, 84, 261, 5, 67, "Input",ExpressionUUID->"21ed1205-62db-4130-8aed-07d062374c0a"],
+Cell[3114, 91, 1849, 51, 128, "Input",ExpressionUUID->"f5553756-95c9-4cc2-82b6-f41abffd55dc"],
+Cell[4966, 144, 208, 4, 67, "Input",ExpressionUUID->"44bae143-c99e-4dee-ae3f-c0f12d3d1b52"],
+Cell[5177, 150, 3810, 108, 224, "Input",ExpressionUUID->"b8329e5f-e1be-4f4f-884f-e31a465afd36"],
+Cell[8990, 260, 210, 4, 67, "Input",ExpressionUUID->"b7b6abdc-caec-4585-9d8c-c96e78882978"],
+Cell[9203, 266, 8730, 208, 327, "Input",ExpressionUUID->"0be3a40f-3bdd-4541-999e-3eac01a55935"],
+Cell[17936, 476, 204, 4, 67, "Input",ExpressionUUID->"f7ca94f8-7af4-4ebe-b506-b971bbff7421"],
+Cell[18143, 482, 6502, 168, 365, "Input",ExpressionUUID->"85d778aa-d980-4f5a-af29-5e5f75b782f4"]
 }
 ]
 *)
